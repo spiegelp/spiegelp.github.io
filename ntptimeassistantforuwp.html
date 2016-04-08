@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>spiegelp.github.io - NTP Time Assistant for UWP</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <link rel="stylesheet" type="text/css" href="https://code.getmdl.io/1.1.3/material.blue-lime.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/prism.css" />
+
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+        <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header mdl-layout__header--waterfall">
+                <div class="mdl-layout__header-row">
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation__link" href="downloads.html#ntptimeassistantforuwp">
+                            <i class="material-icons">file_download</i>
+                            Download
+                        </a>
+                        <a class="mdl-navigation__link" href="https://github.com/spiegelp/NTPTimeAssistantForUWP">
+                            <img src="images/GitHub-Mark-Light-120px-plus.png" class="nav-github-image" />
+                            GitHub
+                        </a>
+                    </nav>
+                </div>
+                <div class="mdl-layout__header-row extended-header">
+                    <div class="extended-header-content">
+                        <div class="extended-header-content__left-col">
+                            <img class="product-image" src="images/NTPTimeAssistantForUWP_icon.png" />
+                        </div>
+                        <div class="extended-header-content__right-col">
+                            <h1>NTP Time Assistant for UWP</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                    <a href="#about" class="mdl-layout__tab is-active">NTP Time Assistant for UWP</a>
+                    <a href="#releasenotes" class="mdl-layout__tab">Release Notes</a>
+                    <a href="#license" class="mdl-layout__tab">License</a>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="index.html">Update blog</a>
+                    <hr />
+                    <a class="mdl-navigation__link mdl-navigation__link_active" href="ntptimeassistantforuwp.html">NTP Time Assistant for UWP</a>
+                    <hr />
+                    <a class="mdl-navigation__link" href="downloads.html">Downloads</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <section class="mdl-layout__tab-panel is-active" id="about">
+                    <div class="content-container">
+                        <div class="two-col-flex-container">
+                            <div class="two-col-flex-cell">
+                                <h1>NTP Time Assistant for UWP</h1>
+                                <p>
+                                    NTP Time Assistant for UWP is a Universal Windows Platform library to get current DateTime and DateTimeOffset instances based on a NTP request.
+                                    It is considered to be used on Windows 10 IoT supported hardware platforms without a real time clock.
+                                </p>
+                            </div>
+                            <div class="two-col-flex-cell"></div>
+                            <div class="two-col-flex-cell two-col-flex-cell-stretch">
+                                <pre class="language-csharp"><code class="language-csharp">// create an instance of the time assistant
+NTPTimeAssistant.Time.TimeAssistant timeAssistant = NTPTimeAssistant.Time.TimeAssistant.Instance;
+
+// let it synchronize with the default NTP server
+await timeAssistant.SynchronizeTimeAsync();
+
+// get your local time
+DateTime localTime = timeAssistant.DateTime;</code></pre>
+                                <br />&nbsp;
+                            </div>
+                            <div class="two-col-flex-cell">
+                                <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="downloads/NTPTimeAssistantForUWP_AnyCPU_1.0.0.0.dll">Download Any CPU</a>
+                                &nbsp;
+                                <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="downloads/NTPTimeAssistantForUWP_ARM_1.0.0.0.dll">Download ARM</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mdl-layout__tab-panel" id="releasenotes">
+                    <div class="content-container">
+                        <div id="ntptimeassistantforuwp" class="blog-update-container">
+                            <span class="blog-update-header-title">NTP Time Assistant for UWP 1.0.0.0</span>
+                            <div class="blog-update-content">
+                                <ul>
+                                    <li>Query the default or a custom NTP server</li>
+                                    <li>Caches the offset between the hardware time and the time of the NTP server to avoid subsequent requests</li>
+                                    <li>Thread safe API</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mdl-layout__tab-panel" id="license">
+                    <div class="content-container">
+                        Microsoft Public License (MS-PL)
+                        <br /><br />
+                        This license governs use of the accompanying software. If you use the software, you
+                        <br />
+                        accept this license. If you do not accept the license, do not use the software.
+                        <br /><br />
+                        1. Definitions
+                        <br />
+                        The terms "reproduce," "reproduction," "derivative works," and "distribution" have the
+                        <br />
+                        same meaning here as under U.S. copyright law.
+                        <br />
+                        A "contribution" is the original software, or any additions or changes to the software.
+                        <br />
+                        A "contributor" is any person that distributes its contribution under this license.
+                        <br />
+                        "Licensed patents" are a contributor's patent claims that read directly on its contribution.
+                        <br /><br />
+                        2. Grant of Rights
+                        <br />
+                        (A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.
+                        <br />
+                        (B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.
+                        <br /><br />
+                        3. Conditions and Limitations
+                        <br />
+                        (A) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.
+                        <br />
+                        (B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.
+                        <br />
+                        (C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
+                        <br />
+                        (D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.
+                        <br />
+                        (E) The software is licensed "as-is." You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script src="js/prism.js"></script>
+    </body>
+</html>
