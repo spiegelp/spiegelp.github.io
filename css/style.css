@@ -73,6 +73,11 @@ div[class="two-col-flex-cell"] h1 {
     padding: 0px;
 }
 
+.floating-footer {
+    display: none;
+    visibility: collapse;
+}
+
 .mdl-layout__content {
     overflow-x: auto;
 }
@@ -99,7 +104,7 @@ div[class="two-col-flex-cell"] h1 {
 .mdl-mini-footer {
     padding: 8px 16px;
 
-    flex: 0 0 auto;
+    /*flex: 0 0 auto;*/
 }
 
 .nav-github-image {
@@ -157,5 +162,15 @@ div[class="two-col-flex-cell"] h1 {
 
     .extended-header-content__right-col h1 {
         font-size: 24px;
+    }
+
+    .fixed-footer {
+        display: none;
+        visibility: collapse;
+    }
+
+    .floating-footer {
+        display: block;
+        visibility: visible;
     }
 }
