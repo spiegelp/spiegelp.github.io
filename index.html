@@ -6,32 +6,31 @@
 
         <title>spiegelp.github.io - Update blog</title>
 
-        <link href='https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-        <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue-lime.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" />
 
         <link rel="stylesheet" href="css/style.css" />
-    
-        <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     </head>
-    <body>
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <header class="mdl-layout__header">
-                <div class="mdl-layout__header-row">
-                    <div class="mdl-layout-spacer"></div>
-                    <nav class="mdl-navigation">
-                        <a class="mdl-navigation__link" href="downloads.html">
-                            <i class="material-icons">file_download</i>
-                            Downloads
-                        </a>
-                        <a class="mdl-navigation__link" href="https://github.com/spiegelp" target="_blank">
-                            <img src="images/GitHub-Mark-Light-120px-plus.png" class="nav-github-image" />
-                            GitHub
-                        </a>
-                    </nav>
-                </div>
-                <div class="mdl-layout__header-row extended-header">
+    <body class="mdc-theme--background mdc-typography">
+        <header class="mdc-toolbar">
+            <div class="mdc-toolbar__row">
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
+                    <button class="mdc-toolbar__icon--menu menu">
+                        <i class="material-icons">menu</i>
+                    </button>
+                </section>
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-end mdc-toolbar__section--shrink-to-fit">
+                    <a class="mdc-toolbar__icon" href="downloads.html" aria-label="Downloads" alt="Downloads">
+                        <i class="material-icons">file_download</i>
+                    </a>
+                    <a class="mdc-toolbar__icon" href="https://github.com/spiegelp" aria-label="GitHub" alt="GitHub">
+                        <img src="images/GitHub-Mark-Light-120px-plus.png" class="nav-github-image" />
+                    </a>
+                </section>
+            </div>
+            <div class="mdc-toolbar__row">
+                <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
                     <div class="extended-header-content">
                         <div class="extended-header-content__left-col">
                             <i class="material-icons">code</i>
@@ -40,86 +39,75 @@
                             <h1>Update blog</h1>
                         </div>
                     </div>
-                </div>
-                <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
-                    <a href="#update-blog" class="mdl-layout__tab is-active">Update blog</a>
-                </div>
-            </header>
-            <div class="mdl-layout__drawer">
-                <nav class="mdl-navigation">
-                    <a class="mdl-navigation__link mdl-navigation__link_active" href="index.html">Update blog</a>
-                    <hr />
-                    <a class="mdl-navigation__link" href="ntptimeassistantforuwp.html">NTP Time Assistant for UWP</a>
-                    <a class="mdl-navigation__link" href="portabletimelibrary.html">Portable Time Library</a>
-                    <hr />
-                    <a class="mdl-navigation__link" href="downloads.html">Downloads</a>
-                </nav>
-            </div>
-            <main class="mdl-layout__content">
-                <section class="mdl-layout__tab-panel is-active" id="update-blog">
-                    <div class="content-container">
-                        <div class="blog-update-container">
-                            <span class="blog-update-header-day">2016-05-01</span>
-                            <span class="blog-update-header-title">NTP Time Assistant for UWP v1.1.0.0 released</span>
-                            <div class="blog-update-content">
-                                <p>
-                                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://github.com/spiegelp/NTPTimeAssistantForUWP/releases/download/v1.1.0.0/NTPTimeAssistantForUWP_AnyCPU_v1.1.0.0.dll">Download Any CPU</a>
-                                    &nbsp;
-                                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://github.com/spiegelp/NTPTimeAssistantForUWP/releases/download/v1.1.0.0/NTPTimeAssistantForUWP_ARM_v1.1.0.0.dll">Download ARM</a>
-                                </p>
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="blog-update-container">
-                            <span class="blog-update-header-day">2016-04-10</span>
-                            <span class="blog-update-header-title">Portable Time Library v1.0.0.0 released</span>
-                            <div class="blog-update-content">
-                                <p>
-                                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://github.com/spiegelp/PortableTimeLibrary/releases/download/v1.0.0.0/PortableTimeLibrary_AnyCPU_v1.0.0.0.dll">Download Any CPU</a>
-                                </p>
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="blog-update-container">
-                            <span class="blog-update-header-day">2016-04-08</span>
-                            <span class="blog-update-header-title">NTP Time Assistant for UWP v1.0.0.0 released</span>
-                            <div class="blog-update-content">
-                                <p>
-                                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://github.com/spiegelp/NTPTimeAssistantForUWP/releases/download/v1.0.0.0/NTPTimeAssistantForUWP_AnyCPU_v1.0.0.0.dll">Download Any CPU</a>
-                                    &nbsp;
-                                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" href="https://github.com/spiegelp/NTPTimeAssistantForUWP/releases/download/v1.0.0.0/NTPTimeAssistantForUWP_ARM_v1.0.0.0.dll">Download ARM</a>
-                                </p>
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="blog-update-container">
-                            <span class="blog-update-header-day">2016-04-08</span>
-                            <span class="blog-update-header-title">Website launch</span>
-                            <div class="blog-update-content">
-                                <p>
-                                    What a pretty date for a information scientist!
-                                    <br />
-                                    Just throw the 20 and you have 2<sup>4</sup>, 2<sup>2</sup> and 2<sup>3</sup>.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                 </section>
-                <footer class="mdl-mini-footer floating-footer">
-                    <div class="mdl-mini-footer__left-section">
-                        <div class="mdl-logo">
-                            Coding projects by Spiegel Philipp. The website content is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
-                        </div>
-                    </div>
-                </footer>
-            </main>
-            <footer class="mdl-mini-footer fixed-footer">
-                <div class="mdl-mini-footer__left-section">
-                    <div class="mdl-logo">
-                        Coding projects by Spiegel Philipp. The website content is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+            </div>
+        </header>
+        <aside class="mdc-temporary-drawer mdc-typography">
+            <nav class="mdc-temporary-drawer__drawer">
+                <nav class="mdc-temporary-drawer__content mdc-list">
+                    <a class="mdc-list-item mdc-temporary-drawer--selected" href="index.html" aria-label="Update blog" alt="Update blog">Update blog</a>
+                    <div role="separator" class="mdc-list-divider"></div>
+                    <a class="mdc-list-item" href="ntptimeassistantforuwp.html" aria-label="NTP Time Assistant for UWP" alt="NTP Time Assistant for UWP">NTP Time Assistant for UWP</a>
+                    <a class="mdc-list-item" href="portabletimelibrary.html" aria-label="Portable Time Library" alt="Portable Time Library">Portable Time Library</a>
+                    <div role="separator" class="mdc-list-divider"></div>
+                    <a class="mdc-list-item" href="downloads.html" aria-label="Downloads" alt="Downloads">Downloads</a>
+                </nav>
+            </nav>
+        </aside>
+        <main>
+            <div class="content-container">
+                <div class="blog-update-container">
+                    <span class="blog-update-header-day">2016-05-01</span>
+                    <span class="blog-update-header-title">NTP Time Assistant for UWP v1.1.0.0 released</span>
+                    <div class="blog-update-content">
+                        <p>
+                            <a class="mdc-button mdc-button--primary" data-mdc-auto-init="MDCRipple" href="https://github.com/spiegelp/NTPTimeAssistantForUWP/releases/download/v1.1.0.0/NTPTimeAssistantForUWP_AnyCPU_v1.1.0.0.dll">Download Any CPU</a>
+                            &nbsp;
+                            <a class="mdc-button mdc-button--primary" data-mdc-auto-init="MDCRipple" href="https://github.com/spiegelp/NTPTimeAssistantForUWP/releases/download/v1.1.0.0/NTPTimeAssistantForUWP_ARM_v1.1.0.0.dll">Download ARM</a>
+                        </p>
                     </div>
                 </div>
-            </footer>
-        </div>
+                <hr />
+                <div class="blog-update-container">
+                    <span class="blog-update-header-day">2016-04-10</span>
+                    <span class="blog-update-header-title">Portable Time Library v1.0.0.0 released</span>
+                    <div class="blog-update-content">
+                        <p>
+                            <a class="mdc-button mdc-button--primary" data-mdc-auto-init="MDCRipple" href="https://github.com/spiegelp/PortableTimeLibrary/releases/download/v1.0.0.0/PortableTimeLibrary_AnyCPU_v1.0.0.0.dll">Download Any CPU</a>
+                        </p>
+                    </div>
+                </div>
+                <hr />
+                <div class="blog-update-container">
+                    <span class="blog-update-header-day">2016-04-08</span>
+                    <span class="blog-update-header-title">NTP Time Assistant for UWP v1.0.0.0 released</span>
+                    <div class="blog-update-content">
+                        <p>
+                            <a class="mdc-button mdc-button--primary" data-mdc-auto-init="MDCRipple" href="https://github.com/spiegelp/NTPTimeAssistantForUWP/releases/download/v1.0.0.0/NTPTimeAssistantForUWP_AnyCPU_v1.0.0.0.dll">Download Any CPU</a>
+                            &nbsp;
+                            <a class="mdc-button mdc-button--primary" data-mdc-auto-init="MDCRipple" href="https://github.com/spiegelp/NTPTimeAssistantForUWP/releases/download/v1.0.0.0/NTPTimeAssistantForUWP_ARM_v1.0.0.0.dll">Download ARM</a>
+                        </p>
+                    </div>
+                </div>
+                <hr />
+                <div class="blog-update-container">
+                    <span class="blog-update-header-day">2016-04-08</span>
+                    <span class="blog-update-header-title">Website launch</span>
+                    <div class="blog-update-content">
+                        <p>
+                            What a pretty date for a information scientist!
+                            <br />
+                            Just throw the 20 and you have 2<sup>4</sup>, 2<sup>2</sup> and 2<sup>3</sup>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            Coding projects by Spiegel Philipp. The website content is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.
+        </footer>
+
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <script src="js/init.js"></script>
     </body>
 </html>
